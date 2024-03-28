@@ -1,0 +1,254 @@
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker build -t tarunbenara/redis ./redis
+[+] Building 0.0s (1/1) FINISHED                                                                                                                                     docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                           0.0s
+ => => transferring dockerfile: 2B                                                                                                                                             0.0s
+ERROR: failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+
+View build details: docker-desktop://dashboard/build/default/default/mlgw8dehdf5be4s8mt6hp5s33
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker build -t tarunbenara/redis ./redis
+[+] Building 2.5s (8/8) FINISHED                                                                                                                                     docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                           0.0s
+ => => transferring dockerfile: 233B                                                                                                                                           0.0s
+ => [internal] load metadata for docker.io/library/alpine:latest                                                                                                               2.5s
+ => [auth] library/alpine:pull token for registry-1.docker.io                                                                                                                  0.0s
+ => [internal] load .dockerignore                                                                                                                                              0.0s
+ => => transferring context: 2B                                                                                                                                                0.0s 
+ => [1/3] FROM docker.io/library/alpine:latest@sha256:c5b1261d6d3e43071626931fc004f70149baeba2c8ec672bd4f27761f8e1ad6b                                                         0.0s 
+                                                                                     0.0s
+ => => writing image sha256:c4e07fb8cc65a7995c10a31e2593a5b952606abb5ec9c86c8b89ddeda54e498a                                                                                   0.0s 
+                                                                                     0.0s 
+ => => writing image sha256:c4e07fb8cc65a7995c10a31e2593a5b952606abb5ec9c86c8b89ddeda54e498a                                                                                   0.0s 
+ => => naming to docker.io/tarunbenara/redis                                                                                                                                   0.0s 
+
+View build details: docker-desktop://dashboard/build/default/default/jsgqp93t3hz1h03ra48v0dasl
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker build -t tarunbenara/simpleweb ./SimpleWeb 
+[+] Building 9.7s (7/7) FINISHED                                                                                                                                     docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                           0.0s
+ => => transferring dockerfile: 242B                                                                                                                                           0.0s
+ => [internal] load metadata for docker.io/library/node:18-alpine                                                                                                              3.9s
+ => [auth] library/node:pull token for registry-1.docker.io                                                                                                                    0.0s
+ => [internal] load .dockerignore                                                                                                                                              0.0s
+ => => transferring context: d2B                                                                                                                                                0.0s
+ => [1/3] FROM docker.io/library/node:18-alpine@sha256:c7620fdecfefb96813da62519897808775230386f4c8482e972e37b8b18cb460                                                        4.9s
+ => => resolve docker.io/library/node:18-alpine@sha256:c7620fdecfefb96813da62519897808775230386f4c8482e972e37b8b18cb460                                                        0.0s
+ => => sha256:c7620fdecfefb96813da62519897808775230386f4c8482e972e37b8b18cb460 1.43kB / 1.43kB                                                                                 0.0s
+ => => sha256:17b35d6932abf679c57caa7b8297ded19d897606b92dcc415940c7690459d8c9 1.16kB / 1.16kB                                                                                 0.0s
+ => => sha256:995e68c9d946f454675dd18204619ccd3b8e065f55f0ae1996f00300722554f9 7.14kB / 7.14kB                                                                                 0.0s
+ => => sha256:ff171c16ee4e8ed3a0ae3edb6fb9558f281134a3879eedca7d79fc2e16e46073 40.25MB / 40.25MB                                                                               3.5s
+ => => sha256:7c215e7ef3945bd4fdac5a20f1e4a29c62f28c8493ad05d3e651d62cf069140d 2.34MB / 2.34MB                                                                                 0.7s
+ => => sha256:3f72a72846173b6a02c1f73db9a74aca2af50fb39bf13ba2e4d12d13e5722d6c 451B / 451B                                                                                     0.7s
+ => => extracting sha256:ff171c16ee4e8ed3a0ae3edb6fb9558f281134a3879eedca7d79fc2e16e46073                                                                                      1.1s
+ => => extracting sha256:7c215e7ef3945bd4fdac5a20f1e4a29c62f28c8493ad05d3e651d62cf069140d                                                                                      0.0s
+ => => extracting sha256:3f72a72846173b6a02c1f73db9a74aca2af50fb39bf13ba2e4d12d13e5722d6c                                                                                      0.0s
+ => [2/3] WORKDIR /usr/app                                                                                                                                                     0.1s
+ => ERROR [3/3] RUN npm install                                                                                                                                                0.7s
+------
+ > [3/3] RUN npm install:
+0.681 npm ERR! code ENOENT
+0.682 npm ERR! syscall open
+0.682 npm ERR! path /usr/app/package.json
+0.683 npm ERR! errno -2
+0.684 npm ERR! enoent ENOENT: no such file or directory, open '/usr/app/package.json'
+0.684 npm ERR! enoent This is related to npm not being able to find a file.
+0.684 npm ERR! enoent
+0.686
+0.686 npm ERR! A complete log of this run can be found in: /root/.npm/_logs/2024-03-27T09_06_36_948Z-debug-0.log
+------
+Dockerfile:8
+--------------------
+   6 |
+   7 |     # Install required dependencies
+   8 | >>> RUN npm install
+   9 |
+  10 |     # Start the Node js-server
+--------------------
+ERROR: failed to solve: process "/bin/sh -c npm install" did not complete successfully: exit code: 254
+
+View build details: docker-desktop://dashboard/build/default/default/u5hwq3jl4wgo5xay10xg6yuie
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker build -t tarunbenara/simpleweb ./Simpleweb
+2024/03/27 14:41:02 http2: server: error reading preface from client //./pipe/docker_engine: file has already been closed
+[+] Building 2.8s (7/7) FINISHED                                                                                                                                     docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                           0.0s
+ => => transferring dockerfile: 242B                                                                                                                                           0.0s 
+ => [internal] load metadata for docker.io/library/node:18-alpine                                                                                                              2.0s 
+ => [auth] library/node:pull token for registry-1.docker.io                                                                                                                    0.0s 
+ => [internal] load .dockerignore                                                                                                                                              0.0s
+ => => transferring context: 2B                                                                                                                                                0.0s 
+ => [1/3] FROM docker.io/library/node:18-alpine@sha256:c7620fdecfefb96813da62519897808775230386f4c8482e972e37b8b18cb460                                                        0.0s 
+ => CACHED [2/3] WORKDIR /usr/app                                                                                                                                              0.0s 
+ => ERROR [3/3] RUN npm install                                                                                                                                                0.7s 
+------
+ > [3/3] RUN npm install:
+0.704 npm ERR! code ENOENT
+0.705 npm ERR! syscall open
+0.705 npm ERR! path /usr/app/package.json
+0.706 npm ERR! errno -2
+0.707 npm ERR! enoent ENOENT: no such file or directory, open '/usr/app/package.json'
+0.707 npm ERR! enoent This is related to npm not being able to find a file.
+0.707 npm ERR! enoent
+0.708
+0.708 npm ERR! A complete log of this run can be found in: /root/.npm/_logs/2024-03-27T09_11_05_267Z-debug-0.log
+------
+Dockerfile:8
+--------------------
+   6 |
+   7 |     # Install required dependencies
+   8 | >>> RUN npm install
+   9 |
+  10 |     # Start the Node js-server
+--------------------
+ERROR: failed to solve: process "/bin/sh -c npm install" did not complete successfully: exit code: 254
+
+View build details: docker-desktop://dashboard/build/default/default/pf9zhbkhxvqvxv95zpgh19ng1
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker build -t tarunbenara/simpleweb ./Simpleweb
+[+] Building 4.2s (9/9) FINISHED                                                                                                                                     docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                           0.0s
+ => => transferring dockerfile: 316B                                                                                                                                           0.0s 
+ => [internal] load metadata for docker.io/library/node:18-alpine                                                                                                              1.1s 
+ => [internal] load .dockerignore                                                                                                                                              0.0s
+
+ => => transferring context: 2B                                                                                                                                                0.0s 
+ => [1/4] FROM docker.io/library/node:18-alpine@sha256:c7620fdecfefb96813da62519897808775230386f4c8482e972e37b8b18cb460                                                        0.0s 
+ => [internal] load build context                                                                                                                                              0.0s 
+ => => transferring context: 735B                                                                                                                                              0.0s 
+ => CACHED [2/4] WORKDIR /usr/app                                                                                                                                              0.0s 
+ => [3/4] COPY ./ ./                                                                                                                                                           0.0s 
+ => [4/4] RUN npm install                                                                                                                                                      2.9s 
+ => exporting to image                                                                                                                                                         0.1s 
+ => => exporting layers                                                                                                                                                        0.1s 
+ => => writing image sha256:83e2602ec5cfae5e7f3086cd186b49821d483110389cbd9bc0782dbc25f5a0ea                                                                                   0.0s 
+ => => naming to docker.io/tarunbenara/simpleweb                                                                                                                               0.0s 
+
+View build details: docker-desktop://dashboard/build/default/default/ser3alc91k1kq7hr2cgpmspzu
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker container run -p 8080: 8080 tarunbenara/simpleweb
+docker: no port specified: 8080:<empty>.
+See 'docker run --help'.
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker container run -p 8080:8080 tarunbenara/simpleweb 
+
+> start
+> node index.js
+
+Listening on port 8080
+
+
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker push tarunbenara/simpleweb
+Using default tag: latest
+The push refers to repository [docker.io/tarunbenara/simpleweb]
+580e10181240: Pushed
+a9cabaa559a7: Pushed
+99f0cf89d870: Pushed
+e79172ab9ca5: Mounted from library/node
+884adc00e5c1: Mounted from library/node
+d5d73638bf28: Mounted from library/node
+d4fc045c9e3a: Mounted from library/node
+latest: digest: sha256:ad73bba567506ab6a022c829851047d8456d7556c61a81abb2c329ca37bab7af size: 1783
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker build -t tarunbenara/visits ./visits
+[+] Building 9.1s (11/11) FINISHED                                                                                                                                   docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                           0.0s
+ => => transferring dockerfile: 421B                                                                                                                                           0.0s 
+ => [internal] load metadata for docker.io/library/node:18-alpine                                                                                                              2.6s 
+ => [auth] library/node:pull token for registry-1.docker.io                                                                                                                    0.0s
+ => [internal] load .dockerignore                                                                                                                                              0.0s
+ => => transferring context: 2B                                                                                                                                                0.0s 
+ => [1/5] FROM docker.io/library/node:18-alpine@sha256:c7620fdecfefb96813da62519897808775230386f4c8482e972e37b8b18cb460                                                        0.0s 
+ => [internal] load build context                                                                                                                                              0.0s
+ => => transferring context: 1.20kB                                                                                                                                            0.0s 
+ => CACHED [2/5] WORKDIR /usr/app                                                                                                                                              0.0s 
+ => [3/5] COPY package.json ./                                                                                                                                                 0.0s 
+ => [4/5] RUN npm install                                                                                                                                                      6.2s 
+ => [5/5] COPY ./ ./                                                                                                                                                           0.0s 
+ => exporting to image                                                                                                                                                         0.1s 
+ => => exporting layers                                                                                                                                                        0.1s 
+ => => writing image sha256:f2c1e9f7b46bd06fe59bb1a1bdc97c16bb5c1d58b3d5dcf7074d12f009bf9424                                                                                   0.0s 
+ => => naming to docker.io/tarunbenara/visits                                                                                                                                  0.0s 
+
+View build details: docker-desktop://dashboard/build/default/default/n4dgrnspnlcfl76zcab94dwnc
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker network create visits_net
+b7cbf2ac57230ba4ff6393d6731bfd2376debc5b309fad3b4c23e739e85aa728
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker run -d --net=visits_net --name redis_db -d redis
+ad9fbdd388f8cfdd6ed74869383bc80f7911204d66a2ce2f6575d698751a35b6
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker network ls
+NETWORK ID     NAME         DRIVER    SCOPE
+1e3886262a7d   bridge       bridge    local
+c5d5830d783a   host         host      local
+e1020e84e0f6   none         null      local
+b7cbf2ac5723   visits_net   bridge    local
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker network inspect visits_net
+[
+    {
+        "Name": "visits_net",
+        "Id": "b7cbf2ac57230ba4ff6393d6731bfd2376debc5b309fad3b4c23e739e85aa728",
+        "Created": "2024-03-27T10:31:06.558696415Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "ad9fbdd388f8cfdd6ed74869383bc80f7911204d66a2ce2f6575d698751a35b6": {
+                "Name": "redis_db",
+                "EndpointID": "54b523d3996b732c6473d059f5891a9fda374a0f5baba0a128fcd80c0e7daa05",
+                "MacAddress": "02:42:ac:12:00:02",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker build -t tarunbenara/visits ./visits
+[+] Building 2.5s (11/11) FINISHED                                                                                                                                   docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                           0.0s
+ => => transferring dockerfile: 421B                                                                                                                                           0.0s 
+ => [internal] load metadata for docker.io/library/node:18-alpine                                                                                                              2.4s 
+ => [auth] library/node:pull token for registry-1.docker.io                                                                                                                    0.0s
+ => [internal] load .dockerignore                                                                                                                                              0.0s
+ => => transferring context: 2B                                                                                                                                                0.0s 
+ => [1/5] FROM docker.io/library/node:18-alpine@sha256:c7620fdecfefb96813da62519897808775230386f4c8482e972e37b8b18cb460                                                        0.0s 
+ => [internal] load build context                                                                                                                                              0.0s 
+ => => transferring context: 751B                                                                                                                                              0.0s 
+ => CACHED [2/5] WORKDIR /usr/app                                                                                                                                              0.0s 
+ => CACHED [3/5] COPY package.json ./                                                                                                                                          0.0s 
+ => CACHED [4/5] RUN npm install                                                                                                                                               0.0s 
+ => [5/5] COPY ./ ./                                                                                                                                                           0.0s 
+ => exporting to image                                                                                                                                                         0.0s 
+ => => exporting layers                                                                                                                                                        0.0s 
+ => => writing image sha256:816be73cb97808a416755716030df8b7de896d635e34d445f572df316f24d4b8                                                                                   0.0s 
+ => => naming to docker.io/tarunbenara/visits                                                                                                                                  0.0s 
+
+View build details: docker-desktop://dashboard/build/default/default/y0f0so042cr5jt2vq02xpnthe
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker run --net=visits_net --name node_app -p 8081:8081 -d tarunebenara/visits
+Unable to find image 'tarunebenara/visits:latest' locally
+docker: Error response from daemon: pull access denied for tarunebenara/visits, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> docker run --net=visits_net --name node_app -p 8081:8081 -d tarunbenara/visits
+28c0329598e6c2855ea742e5cfb4666b66497aada6030d94c7ae6eb692ad5c0a
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> ^C
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Docker_Class> 
