@@ -1,0 +1,9 @@
+P
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Kubernetes_Class> kubectl get pods
+NAME         READY   STATUS             RESTARTS   AGE
+client-pod   0/1     ImagePullBackOff   0          42s
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Kubernetes_Class> kubectl get services
+NAME               TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+client-node-port   NodePort    10.101.155.161   <none>        3050:31515/TCP   4m52s
+kubernetes         ClusterIP   10.96.0.1        <none>        443/TCP          102m
+PS C:\Users\0032JT744\Downloads\FST_M2\Cloud\Kubernetes_Class> 
