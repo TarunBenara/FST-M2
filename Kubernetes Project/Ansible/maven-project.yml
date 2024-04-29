@@ -1,0 +1,21 @@
+---
+- hosts: local
+  become: true
+  tasks:
+      - name: Install required components
+        apt:
+            name:docker run -d -p 80:80 docker/getting-started
+                - git
+                - maven
+                - openjdk-17-jdk
+            state: present
+      - name: Clone maven repo
+        git:
+          repo: https://github.com/training-support/FST_JUnit_Project.git
+          dest: /home/tarunbenara/FST_JUNIT_PROJECT
+      - name: Run maven tests
+        command: mvn clean test
+        args:
+            chdir: /home/tarunbenara/FST_JUNIT_PROJECT
+      
+      
